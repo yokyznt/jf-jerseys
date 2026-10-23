@@ -1,0 +1,10 @@
+android/
+node_modules/
+www/
+*.apk
+build-apk.js
+package.json
+package-lock.json
+capacitor.config.json
+assets/
+.claude/

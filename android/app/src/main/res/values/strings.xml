@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">JF Jerseys</string>
+    <string name="title_activity_main">JF Jerseys</string>
+    <string name="package_name">mx.jfjerseys.app</string>
+    <string name="custom_url_scheme">mx.jfjerseys.app</string>
+</resources>
