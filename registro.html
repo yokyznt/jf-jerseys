@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JF Jerseys - Crear cuenta</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header class="encabezado">
+
+        <div class="logo">
+            <span>JF</span>
+        </div>
+
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="servicio.html">Servicio</a>
+            <a href="beneficios.html">Beneficios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <div class="acciones">
+            <a href="registro.html" class="icono" aria-label="Mi cuenta">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 20c0-4 3.5-7 8-7s8 3 8 7"/>
+                </svg>
+            </a>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ========== BANNER ========== -->
+        <section class="registro-banner">
+
+            <h1>Crea tu cuenta</h1>
+
+            <p>Regístrate en JF Jerseys y vive la pasión del fútbol como nunca antes.</p>
+
+        </section>
+
+
+        <!-- ========== FORMULARIO ========== -->
+        <section class="seccion" style="padding-top: 10px;">
+
+            <div class="contenido-seccion">
+
+                <div class="registro-layout">
+
+                    <!-- Registro rápido con Google -->
+                    <div class="registro-social">
+
+                        <button type="button" class="boton-google">
+                            <svg width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="#4285F4" d="M23.52 12.27c0-.85-.07-1.47-.22-2.12H12v3.85h6.6c-.13 1.1-.86 2.76-2.47 3.87l-.02.15 3.59 2.78.25.02c2.28-2.1 3.57-5.18 3.57-8.55z"/>
+                                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.07 7.93-2.91l-3.78-2.93c-1.01.7-2.37 1.19-4.15 1.19-3.18 0-5.87-2.1-6.83-5l-.14.01-3.73 2.89-.05.13C3.3 21.3 7.33 24 12 24z"/>
+                                <path fill="#FBBC05" d="M5.17 14.35c-.25-.73-.4-1.5-.4-2.35s.15-1.62.39-2.35l-.01-.16-3.78-2.94-.12.06C.4 8.24 0 10.07 0 12s.4 3.76 1.25 5.39l3.92-3.04z"/>
+                                <path fill="#EA4335" d="M12 4.76c2.25 0 3.77.97 4.64 1.78l3.38-3.3C17.94 1.2 15.24 0 12 0 7.33 0 3.3 2.7 1.25 6.61l3.91 3.04c.97-2.9 3.66-5 6.84-5z"/>
+                            </svg>
+                            Continuar con Google
+                        </button>
+
+                        <span class="separador">o crea tu cuenta con tu correo</span>
+
+                        <p style="color: var(--texto-suave); font-size: 0.85rem;">
+                            Únete a la comunidad JF Jerseys y sé parte de quienes viven
+                            el fútbol con el corazón.
+                        </p>
+
+                    </div>
+
+                    <!-- Formulario -->
+                    <form id="formRegistro" class="registro-form">
+
+                        <h2>Regístrate con tu email y contraseña</h2>
+
+                        <div class="fila-doble">
+                            <div class="campo">
+                                <label for="nombres">Nombres</label>
+                                <input type="text" id="nombres" placeholder="Ingresa tus nombres" required>
+                            </div>
+                            <div class="campo">
+                                <label for="apellidos">Apellidos</label>
+                                <input type="text" id="apellidos" placeholder="Ingresa tus apellidos" required>
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <label for="nacimiento">Fecha de nacimiento</label>
+                            <input type="date" id="nacimiento" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="telefono">Número telefónico</label>
+                            <div class="fila-telefono">
+                                <input type="text" value="+52" readonly>
+                                <input type="tel" id="telefono" placeholder="Número telefónico" required>
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" placeholder="correo@ejemplo.com" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="password">Contraseña</label>
+                            <input type="password" id="password" placeholder="Crea una contraseña" required>
+                        </div>
+
+                        <div class="campo">
+                            <label>Género</label>
+                            <div class="genero-opciones">
+                                <label><input type="radio" name="genero" value="hombre"> Hombre</label>
+                                <label><input type="radio" name="genero" value="mujer"> Mujer</label>
+                            </div>
+                        </div>
+
+                        <h3>Dirección de envío</h3>
+
+                        <div class="campo">
+                            <label for="calle">Calle y número</label>
+                            <input type="text" id="calle" placeholder="Calle, número exterior e interior">
+                        </div>
+
+                        <div class="fila-doble">
+                            <div class="campo">
+                                <label for="colonia">Colonia</label>
+                                <input type="text" id="colonia" placeholder="Colonia">
+                            </div>
+                            <div class="campo">
+                                <label for="cp">Código postal</label>
+                                <input type="text" id="cp" placeholder="C.P.">
+                            </div>
+                        </div>
+
+                        <div class="fila-doble">
+                            <div class="campo">
+                                <label for="ciudad">Ciudad</label>
+                                <input type="text" id="ciudad" placeholder="Ciudad">
+                            </div>
+                            <div class="campo">
+                                <label for="estado">Estado</label>
+                                <input type="text" id="estado" placeholder="Estado">
+                            </div>
+                        </div>
+
+                        <div class="check-opcion">
+                            <input type="checkbox" id="boletin">
+                            <label for="boletin">Suscríbete a nuestro boletín</label>
+                        </div>
+
+                        <div class="check-opcion">
+                            <input type="checkbox" id="terminos" required>
+                            <label for="terminos">Acepto los <a href="#">Términos y Condiciones de Uso</a></label>
+                        </div>
+
+                        <div class="check-opcion">
+                            <input type="checkbox" id="privacidad" required>
+                            <label for="privacidad">Acepto la <a href="#">Política de Privacidad</a> y el tratamiento de datos personales</label>
+                        </div>
+
+                        <button type="submit" class="boton-crear-cuenta">Crear cuenta →</button>
+
+                        <p class="ya-tienes-cuenta">¿Ya tienes una cuenta?</p>
+                        <a href="#" class="boton-iniciar-sesion">Iniciar sesión</a>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========== PIE DE PÁGINA ========== -->
+    <footer class="pie">
+
+        <p class="lema">
+            Tu pasión por el fútbol empieza con el jersey.
+        </p>
+
+        <div class="redes">
+            <a href="https://www.instagram.com/issrnx_?rpxt=MWJtdnNienRtdHJoeQ==">Instagram</a>
+            <a href="https://www.tiktok.com/@rl_isair?_r=1&_t=ZT-9Al0cn4spkk">TikTok</a>
+            <a href="https://x.com/ISAIR_RL">Twitter</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 JF Jerseys. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+    <script>
+        document.getElementById('formRegistro').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            var usuario = {
+                nombres: document.getElementById('nombres').value.trim(),
+                apellidos: document.getElementById('apellidos').value.trim(),
+                nacimiento: document.getElementById('nacimiento').value,
+                telefono: document.getElementById('telefono').value.trim(),
+                email: document.getElementById('email').value.trim(),
+                calle: document.getElementById('calle').value.trim(),
+                colonia: document.getElementById('colonia').value.trim(),
+                cp: document.getElementById('cp').value.trim(),
+                ciudad: document.getElementById('ciudad').value.trim(),
+                estado: document.getElementById('estado').value.trim()
+            };
+
+            localStorage.setItem('jf_usuario', JSON.stringify(usuario));
+            alert('¡Cuenta creada! Bienvenido, ' + usuario.nombres + '.');
+            window.location.href = 'index.html';
+        });
+    </script>
+
+</body>
+
+</html>

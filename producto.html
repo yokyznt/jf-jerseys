@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>JF Jerseys - Producto</title>
+ 
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+ 
+<body class="pagina-jerseys">
+ 
+    <header class="encabezado">
+ 
+        <div class="logo">
+            <span>JF</span>
+        </div>
+ 
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="servicio.html">Servicio</a>
+            <a href="beneficios.html">Beneficios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+ 
+        <div class="acciones">
+            <a href="registro.html" class="icono" aria-label="Mi cuenta">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 20c0-4 3.5-7 8-7s8 3 8 7"/>
+                </svg>
+            </a>
+        </div>
+ 
+    </header>
+ 
+ 
+    <main>
+ 
+        <section class="seccion producto-detalle-seccion">
+ 
+            <div class="contenido-seccion">
+ 
+                <!-- Ruta de navegación -->
+                <nav class="migas">
+                    <a href="index.html">Inicio</a>
+                    <span>›</span>
+                    <a href="jerseys.html">Jerseys</a>
+                    <span>›</span>
+                    <span id="prodEquipoMiga">Equipo</span>
+                    <span>›</span>
+                    <span id="prodNombreMiga">Producto</span>
+                </nav>
+ 
+                <div class="producto-detalle">
+ 
+                    <!-- Foto / video -->
+                    <div class="producto-detalle-media">
+ 
+                        <div class="producto-detalle-imagen" id="prodMediaContenedor">
+                            <img id="prodImagen" src="img/promos/real-madrid.jpeg" alt="Jersey">
+                        </div>
+ 
+                        <div class="miniaturas" id="miniaturas">
+ 
+                            <button type="button" class="miniatura miniatura-video" data-tipo="video" data-src="" aria-label="Ver video">
+                                <span class="miniatura-play">▶</span>
+                            </button>
+ 
+                            <button type="button" class="miniatura miniatura-foto" data-tipo="imagen" data-src="">
+                                <img id="miniFoto1" src="" alt="Foto 1">
+                            </button>
+ 
+                            <button type="button" class="miniatura miniatura-foto" data-tipo="imagen" data-src="">
+                                <img id="miniFoto2" src="" alt="Foto 2">
+                            </button>
+ 
+                            <button type="button" class="miniatura miniatura-foto" data-tipo="imagen" data-src="">
+                                <img id="miniFoto3" src="" alt="Foto 3">
+                            </button>
+ 
+                            <button type="button" class="miniatura miniatura-foto" data-tipo="imagen" data-src="">
+                                <img id="miniFoto4" src="" alt="Foto 4">
+                            </button>
+ 
+                        </div>
+ 
+                    </div>
+ 
+                    <!-- Información -->
+                    <div class="producto-detalle-info">
+ 
+                        <span class="producto-detalle-equipo" id="prodEquipoTag">EQUIPO</span>
+                        <h1 id="prodTitulo">Nombre del jersey</h1>
+ 
+                        <p class="producto-detalle-precio" id="prodPrecio">$0</p>
+ 
+                        <p class="producto-detalle-descripcion" id="prodDescripcion">
+                            Jersey oficial para la temporada 2025/26. Tecnología ligera y
+                            transpirable, escudo del club bordado y materiales de calidad
+                            para los verdaderos aficionados.
+                        </p>
+ 
+                        <hr class="producto-detalle-linea">
+ 
+                        <div class="producto-detalle-opcion">
+                            <h3>Talla</h3>
+                            <div class="tallas-selector" id="tallasSelector">
+                                <button type="button" class="talla-opcion" data-talla="S">S</button>
+                                <button type="button" class="talla-opcion" data-talla="M">M</button>
+                                <button type="button" class="talla-opcion talla-activa" data-talla="L">L</button>
+                                <button type="button" class="talla-opcion" data-talla="XL">XL</button>
+                                <button type="button" class="talla-opcion" data-talla="XXL">XXL</button>
+                            </div>
+                        </div>
+ 
+                        <div class="producto-detalle-opcion">
+                            <h3>Cantidad</h3>
+                            <div class="cantidad-selector">
+                                <button type="button" id="cantidadMenos" aria-label="Quitar uno">−</button>
+                                <span id="cantidadValor">1</span>
+                                <button type="button" id="cantidadMas" aria-label="Agregar uno">+</button>
+                            </div>
+                        </div>
+ 
+                        <div class="producto-detalle-opcion">
+                            <h3>Personalización (opcional)</h3>
+                            <div class="personalizacion-campos">
+                                <div class="campo-personalizar">
+                                    <label for="persoNombre">Nombre</label>
+                                    <input type="text" id="persoNombre" placeholder="Ej. MESSI" maxlength="12">
+                                </div>
+                                <div class="campo-personalizar">
+                                    <label for="persoNumero">Número</label>
+                                    <input type="text" id="persoNumero" placeholder="Ej. 10" maxlength="2" inputmode="numeric">
+                                </div>
+                            </div>
+                        </div>
+ 
+                        <button type="button" class="boton-agregar-carrito" id="agregarCarritoBtn">
+                            🛒 Agregar al carrito
+                        </button>
+ 
+                        <p class="producto-detalle-nota">
+                            Envíos a todo México. Cambios y devoluciones disponibles.
+                        </p>
+ 
+                    </div>
+ 
+                </div>
+ 
+            </div>
+ 
+        </section>
+ 
+    </main>
+ 
+ 
+    <!-- ========== PIE DE PÁGINA ========== -->
+    <footer class="pie">
+ 
+        <p class="lema">
+            Tu pasión por el fútbol empieza con el jersey.
+        </p>
+ 
+        <div class="redes">
+            <a href="https://www.instagram.com/issrnx_?rpxt=MWJtdnNienRtdHJoeQ==">Instagram</a>
+            <a href="https://www.tiktok.com/@rl_isair?_r=1&_t=ZT-9Al0cn4spkk">TikTok</a>
+            <a href="https://x.com/ISAIR_RL">Twitter</a>
+        </div>
+ 
+        <p class="copyright">
+            © 2026 JF Jerseys. Todos los derechos reservados.
+        </p>
+ 
+    </footer>
+ 
+ 
+    <!-- ===== CARRITO FLOTANTE ===== -->
+    <button class="carrito-flotante" id="carritoBoton" aria-label="Ver carrito">
+        🛒
+        <span class="carrito-contador" id="carritoContador">0</span>
+    </button>
+ 
+    <div class="carrito-panel" id="carritoPanel">
+        <div class="carrito-panel-header">
+            <h3>Mi carrito</h3>
+        </div>
+        <p id="carritoVacio" class="carrito-vacio">Aún no has agregado jerseys.</p>
+        <ul class="carrito-lista" id="carritoLista"></ul>
+        <button type="button" class="boton-finalizar" id="finalizarCompraBtn">Finalizar compra</button>
+ 
+        <div id="compradosBloque" class="comprados-bloque">
+            <h3>Comprados</h3>
+            <ul class="carrito-lista" id="compradosLista"></ul>
+        </div>
+    </div>
+ 
+    <!-- ===== MÉTODO DE PAGO (solo visual) ===== -->
+    <div class="modal-pago-fondo" id="modalPagoFondo">
+        <div class="modal-pago">
+            <h3>Elige tu método de pago</h3>
+ 
+            <button type="button" class="metodo-pago" data-metodo="Mercado Pago">
+                💳 Mercado Pago
+            </button>
+ 
+            <button type="button" class="metodo-pago" data-metodo="OXXO">
+                🏪 Pago en OXXO
+            </button>
+ 
+            <button type="button" class="metodo-pago" data-metodo="Transferencia bancaria">
+                🏦 Transferencia bancaria
+            </button>
+ 
+            <button type="button" class="modal-pago-cerrar" id="cerrarModalPago">Cancelar</button>
+        </div>
+    </div>
+ 
+ 
+    <script src="js/script.js"></script>
+ 
+ 
+    <script>
+        // ===== PÁGINA DE PRODUCTO =====
+        (function () {
+ 
+            // ---- 1. Cargar los datos de la tarjeta en la que se dio clic ----
+            var datos = null;
+            try {
+                datos = JSON.parse(sessionStorage.getItem('jf_producto_actual'));
+            } catch (e) {
+                datos = null;
+            }
+            if (!datos) {
+                datos = { nombre: 'Jersey', precio: '$1,299', img: 'img/promos/real-madrid.jpeg' };
+            }
+ 
+            document.getElementById('prodImagen').src = datos.img;
+            document.getElementById('prodImagen').alt = datos.nombre;
+            document.getElementById('prodTitulo').textContent = datos.nombre;
+            document.getElementById('prodEquipoTag').textContent = datos.nombre.toUpperCase();
+            document.getElementById('prodEquipoMiga').textContent = datos.nombre;
+            document.getElementById('prodNombreMiga').textContent = 'Jersey ' + datos.nombre;
+ 
+            // ---- Fotos y video propios de cada jersey ----
+            // La clave es el nombre EXACTO como aparece en la tarjeta (el <h3>).
+            // "fotos" debe traer 4 rutas. "video" es opcional: si no tienes el
+            // video de ese equipo todavía, déjalo como "" y el botón se oculta.
+            var mediaPorJersey = {
+                "Real Madrid": {
+                    fotos: ["img/jerseys/real-madrid-1.jpg", "img/jerseys/real-madrid-2.jpg", "img/jerseys/real-madrid-3.jpg", "img/jerseys/real-madrid-4.jpg"],
+                    video: "video/real-madrid.mp4"
+                },
+                "Barcelona": {
+                    fotos: ["img/jerseys/barcelona-1.jpg", "img/jerseys/barcelona-2.jpg", "img/jerseys/barcelona-3.jpg", "img/jerseys/barcelona-4.jpg"],
+                    video: "video/barcelona.mp4"
+                },
+                "FC Barcelona": {
+                    fotos: ["img/jerseys/barcelona-1.jpg", "img/jerseys/barcelona-2.jpg", "img/jerseys/barcelona-3.jpg", "img/jerseys/barcelona-4.jpg"],
+                    video: "video/barcelona.mp4"
+                },
+                "Manchester United": {
+                    fotos: ["img/jerseys/manchester-united-1.jpg", "img/jerseys/manchester-united-2.jpg", "img/jerseys/manchester-united-3.jpg", "img/jerseys/manchester-united-4.jpg"],
+                    video: "video/manchester-united.mp4"
+                },
+                "PSG": {
+                    fotos: ["img/jerseys/psg-1.jpg", "img/jerseys/psg-2.jpg", "img/jerseys/psg-3.jpg", "img/jerseys/psg-4.jpg"],
+                    video: "video/psg.mp4"
+                },
+                "Liverpool": {
+                    fotos: ["img/jerseys/liverpool-1.jpg", "img/jerseys/liverpool-2.jpg", "img/jerseys/liverpool-3.jpg", "img/jerseys/liverpool-4.jpg"],
+                    video: "video/liverpool.mp4"
+                },
+                "Bayern Munich": {
+                    fotos: ["img/jerseys/bayern-munich-1.jpg", "img/jerseys/bayern-munich-2.jpg", "img/jerseys/bayern-munich-3.jpg", "img/jerseys/bayern-munich-4.jpg"],
+                    video: "video/bayern-munich.mp4"
+                },
+                "Inter de Milán": {
+                    fotos: ["img/jerseys/inter-milan-1.jpg", "img/jerseys/inter-milan-2.jpg", "img/jerseys/inter-milan-3.jpg", "img/jerseys/inter-milan-4.jpg"],
+                    video: "video/inter-milan.mp4"
+                },
+                "Atlético de Madrid": {
+                    fotos: ["img/jerseys/atletico-madrid-1.jpg", "img/jerseys/atletico-madrid-2.jpg", "img/jerseys/atletico-madrid-3.jpg", "img/jerseys/atletico-madrid-4.jpg"],
+                    video: "video/atletico-madrid.mp4"
+                },
+                "Juventus": {
+                    fotos: ["img/jerseys/juventus-1.jpg", "img/jerseys/juventus-2.jpg", "img/jerseys/juventus-3.jpg", "img/jerseys/juventus-4.jpg"],
+                    video: "video/juventus.mp4"
+                },
+                "Chelsea": {
+                    fotos: ["img/jerseys/chelsea-1.jpg", "img/jerseys/chelsea-2.jpg", "img/jerseys/chelsea-3.jpg", "img/jerseys/chelsea-4.jpg"],
+                    video: "video/chelsea.mp4"
+                },
+                "Arsenal": {
+                    fotos: ["img/jerseys/arsenal-1.jpg", "img/jerseys/arsenal-2.jpg", "img/jerseys/arsenal-3.jpg", "img/jerseys/arsenal-4.jpg"],
+                    video: "video/arsenal.mp4"
+                },
+                "Boca Juniors": {
+                    fotos: ["img/jerseys/boca-juniors.jpeg", "img/jerseys/boca-juniors-2.jpg", "img/jerseys/boca-juniors-3.jpg", "img/jerseys/boca-juniors-4.jpg"],
+                    video: "video/boca-juniors.mp4"
+                },
+                "Tottenham Hotspur": {
+                    fotos: ["img/jerseys/tottenham-1.jpg", "img/jerseys/tottenham-2.jpg", "img/jerseys/tottenham-3.jpg", "img/jerseys/tottenham-4.jpg"],
+                    video: "video/tottenham.mp4"
+                },
+                "Manchester City": {
+                    fotos: ["img/jerseys/manchester-city-1.jpg", "img/jerseys/manchester-city-2.jpg", "img/jerseys/manchester-city-3.jpg", "img/jerseys/manchester-city-4.jpg"],
+                    video: "video/manchester-city.mp4"
+                },
+                "Borussia Dortmund": {
+                    fotos: ["img/jerseys/borussia-dortmund-1.jpg", "img/jerseys/borussia-dortmund-2.jpg", "img/jerseys/borussia-dortmund-3.jpg", "img/jerseys/borussia-dortmund-4.jpg"],
+                    video: "video/borussia-dortmund.mp4"
+                },
+                "Real Betis": {
+                    fotos: ["img/jerseys/real-betis-1.jpg", "img/jerseys/real-betis-2.jpg", "img/jerseys/real-betis-3.jpg", "img/jerseys/real-betis-4.jpg"],
+                    video: "video/real-betis.mp4"
+                },
+                "AC Milan": {
+                    fotos: ["img/jerseys/ac-milan-1.jpg", "img/jerseys/ac-milan-2.jpg", "img/jerseys/ac-milan-3.jpg", "img/jerseys/ac-milan-4.jpg"],
+                    video: "video/ac-milan.mp4"
+                }
+            };
+ 
+            var media = mediaPorJersey[datos.nombre];
+ 
+            if (media) {
+                // Hay fotos específicas para este jersey: se usan esas.
+                ['miniFoto1', 'miniFoto2', 'miniFoto3', 'miniFoto4'].forEach(function (id, i) {
+                    var img = document.getElementById(id);
+                    img.src = media.fotos[i];
+                    img.closest('.miniatura').setAttribute('data-src', media.fotos[i]);
+                });
+ 
+                var botonVideo = document.querySelector('.miniatura-video');
+                if (media.video) {
+                    botonVideo.setAttribute('data-src', media.video);
+                    botonVideo.style.display = '';
+                } else {
+                    botonVideo.style.display = 'none';
+                }
+            } else {
+                // No hay fotos cargadas todavía para este jersey: se repite la foto de la tarjeta.
+                ['miniFoto1', 'miniFoto2', 'miniFoto3', 'miniFoto4'].forEach(function (id) {
+                    var img = document.getElementById(id);
+                    img.src = datos.img;
+                    img.closest('.miniatura').setAttribute('data-src', datos.img);
+                });
+                document.querySelector('.miniatura-video').style.display = 'none';
+            }
+ 
+            // ---- 2. Precio base (talla L) y precio según talla ----
+            function numeroDePrecio(texto) {
+                var n = parseFloat(String(texto).replace(/[^0-9.]/g, ''));
+                return isNaN(n) ? 0 : n;
+            }
+ 
+            function formatoPrecio(numero) {
+                return '$' + numero.toLocaleString('es-MX');
+            }
+ 
+            var precioBase = numeroDePrecio(datos.precio); // este es el precio de la talla L
+            var ajustePorTalla = { S: -60, M: -30, L: 0, XL: 20, XXL: 40 };
+            var precioUnitario = precioBase; // precio de 1 sola pieza, según la talla
+ 
+            function actualizarPantallaPrecio() {
+                var total = precioUnitario * cantidad;
+                document.getElementById('prodPrecio').textContent = formatoPrecio(total);
+            }
+ 
+            function actualizarPrecio(talla) {
+                precioUnitario = precioBase + ajustePorTalla[talla];
+                actualizarPantallaPrecio();
+            }
+ 
+            // ---- 3. Selector de talla ----
+            var botonesTalla = document.querySelectorAll('.talla-opcion');
+            var tallaSeleccionada = 'L';
+            botonesTalla.forEach(function (boton) {
+                boton.addEventListener('click', function () {
+                    botonesTalla.forEach(function (b) { b.classList.remove('talla-activa'); });
+                    boton.classList.add('talla-activa');
+                    tallaSeleccionada = boton.getAttribute('data-talla');
+                    actualizarPrecio(tallaSeleccionada);
+                });
+            });
+ 
+            // ---- 4. Selector de cantidad ----
+            var cantidad = 1;
+            var cantidadValor = document.getElementById('cantidadValor');
+            document.getElementById('cantidadMenos').addEventListener('click', function () {
+                if (cantidad > 1) {
+                    cantidad--;
+                    cantidadValor.textContent = cantidad;
+                    actualizarPantallaPrecio();
+                }
+            });
+            document.getElementById('cantidadMas').addEventListener('click', function () {
+                cantidad++;
+                cantidadValor.textContent = cantidad;
+                actualizarPantallaPrecio();
+            });
+ 
+            // Ahora que "cantidad" ya existe, se muestra el precio inicial (talla L x 1)
+            actualizarPrecio('L');
+ 
+            // ---- 5. Miniaturas: fotos y video ----
+            var contenedorMedia = document.getElementById('prodMediaContenedor');
+            document.querySelectorAll('.miniatura').forEach(function (miniatura) {
+                miniatura.addEventListener('click', function () {
+                    var tipo = miniatura.getAttribute('data-tipo');
+                    var src = miniatura.getAttribute('data-src');
+ 
+                    document.querySelectorAll('.miniatura').forEach(function (m) {
+                        m.classList.remove('miniatura-activa');
+                    });
+                    miniatura.classList.add('miniatura-activa');
+ 
+                    if (tipo === 'video') {
+                        contenedorMedia.innerHTML =
+                            '<div class="video-envoltura">' +
+                                '<video id="videoProducto" autoplay muted loop playsinline>' +
+                                    '<source src="' + src + '" type="video/mp4">' +
+                                '</video>' +
+                            '</div>';
+                    } else {
+                        contenedorMedia.innerHTML = '';
+                        var imagen = document.createElement('img');
+                        imagen.id = 'prodImagen';
+                        imagen.src = src;
+                        imagen.alt = datos.nombre;
+                        contenedorMedia.appendChild(imagen);
+                    }
+                });
+            });
+ 
+            // ---- 6. Agregar al carrito ----
+            document.getElementById('agregarCarritoBtn').addEventListener('click', function () {
+ 
+                var nombre = document.getElementById('persoNombre').value.trim();
+                var numero = document.getElementById('persoNumero').value.trim();
+                var personalizacion = '';
+                if (nombre || numero) {
+                    personalizacion = (nombre ? nombre : '') + (numero ? ' #' + numero : '');
+                }
+ 
+                var item = {
+                    nombre: datos.nombre,
+                    precio: formatoPrecio(precioUnitario),
+                    img: datos.img,
+                    talla: tallaSeleccionada,
+                    cantidad: cantidad,
+                    personalizacion: personalizacion
+                };
+ 
+                if (!window.JFCarrito || typeof window.JFCarrito.agregarAlCarrito !== 'function') {
+                    alert('El carrito no está disponible. Revisa que js/script.js se esté cargando.');
+                    return;
+                }
+                window.JFCarrito.agregarAlCarrito(item);
+ 
+                var boton = document.getElementById('agregarCarritoBtn');
+                var textoOriginal = boton.textContent;
+                boton.textContent = '✓ Agregado al carrito';
+                setTimeout(function () {
+                    boton.textContent = textoOriginal;
+                }, 1500);
+            });
+ 
+        })();
+    </script>
+ 
+</body>
+ 
+</html>
